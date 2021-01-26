@@ -3,3 +3,10 @@ $(document).ready(function(){
 		$(this).toggleClass('open');
 	});
 });
+
+
+$("#toggle").click(function() {
+	$(this).toggleClass("open");
+    $("#menu").toggleClass("opened");
+    $(".lv-header").toggleClass("openmenu");
+});
