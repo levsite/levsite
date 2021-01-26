@@ -445,8 +445,9 @@ video {
 }
 .footer-text {
     padding: 20px 0;
-    width: 80%;
-    margin: 0 auto;
+    font-weight: 300;
+    margin-left: 17%;
+    width: 640px
 }
 #nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
     width: 30px;
@@ -543,10 +544,21 @@ video {
         margin-left: auto;
     }
     .lv-header {
-        padding: 30px;
+        padding: 20px;
+        display: flex;
+        align-items: center;
     }
     .lv-logo {
         padding-top: 0;
+    }
+    .footer-text { 
+        width: calc(100% - 60px);
+        padding: 20px;
+        margin: 0;
+        font-size: 14px;
+    }
+    video {
+        height: calc(100vh - 235px);
     }
 }
 
