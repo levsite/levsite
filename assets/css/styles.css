@@ -11,6 +11,7 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  height: 100vh;
 }
 
 /* Sections
@@ -23,6 +24,9 @@ html {
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /**
@@ -30,7 +34,7 @@ body {
  */
 
 main {
-  display: block;
+  flex: 1 0 auto;
 }
 
 /**
@@ -352,7 +356,9 @@ template {
 .lv-header {
     display: flex;
     flex-direction: row;
-    padding: 0 30px;
+    padding: 0 30px 60px;
+    z-index: 1;
+    flex-shrink: 0;
 }
 .lv-logo {
     background-color: #eecd31;
@@ -372,6 +378,7 @@ template {
     color: #cbd2d7;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     cursor: pointer;
     transition: all .2s;
     padding-top: 20px;
@@ -405,4 +412,22 @@ template {
 }
 .lv-menu-item:last-child {
     margin-right: 0;
+}
+footer {
+    flex-shrink: 0;
+    z-index: 1;
+}
+video {
+    object-fit: cover;
+    width: 100vw;
+    /* height: calc(100vh - 224px); */
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.footer-text {
+    padding: 20px 0;
+    width: 80%;
+    margin: 0 auto;
 }
