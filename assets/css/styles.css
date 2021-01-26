@@ -371,13 +371,25 @@ template {
     position: relative;
     color: #cbd2d7;
     text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    transition: all .2s;
+    padding-top: 20px;
+}
+.lv-menu-item:hover {
+    color: #eecd31;
+}
+.lv-menu-item:hover:after {
+    background-color: #eecd31;
+    height: 4px;
 }
 .lv-menu-item:after {
     position: absolute;
-    top: -20px;
+    top: 0px;
     left: 0;
     width: 100%;
     height: 1px;
+    transition: all .2s;
     background-color: #cbd2d7;
     content: '';
 }
