@@ -608,7 +608,7 @@ video {
     height: 65px;
     margin: 0 auto 0.5em auto;
   }
-  #menu ul li:after {
+  /* #menu ul li:after {
     content: " ";
     position: absolute;
     width: 0%;
@@ -620,7 +620,7 @@ video {
     -webkit-transition: 350ms ease all;
     -moz-transition: 350ms ease all;
     transition: 350ms ease all;
-  }
+  } */
   #menu ul li:hover:after {
     width: 90%;
   }
@@ -642,7 +642,7 @@ video {
   }
   #menu ul li a:hover {
     color: #eee;
-    border-color: #286efa;
+    /* border-color: #286efa; */
   }
   #menu ul li a span {
     font-size: 1.6666666667em;
