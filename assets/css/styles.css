@@ -438,7 +438,7 @@ footer {
 video {
     object-fit: cover;
     width: 100vw;
-    height: calc(100vh - 261px);
+    height: calc(100vh - 243px);
     top: 0;
     left: 0;
     z-index: 0;
