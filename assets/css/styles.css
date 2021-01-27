@@ -810,3 +810,27 @@ video {
 .lock-scroll {
     overflow-y: hidden;
 }
+.page-body {
+    background-color: #f7f7f7;
+    width: 100%;
+    margin-top: 90px;
+    flex: 1 0 auto;
+}
+.page-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.who-we-are, .what-we-do, .our-clients, .contact-us {
+    display: none;
+}
+.body2, .body3, .body4, .body5, .body6 {
+    opacity: 0;
+    display: none;
+}
+
+@media only screen and (max-width: 768px) { 
+    .page-body {
+        margin-top: 55px;
+    }
+}
