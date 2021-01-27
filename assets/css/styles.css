@@ -600,7 +600,7 @@ video {
         font-size: 14px;
     }
     video {
-        height: calc(100vh - 211px);
+        height: calc((var(--vh, 1vh) * 100) - 211px);
     }
 }
 .our-mission {
