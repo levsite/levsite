@@ -1,3 +1,27 @@
+@font-face {
+    font-family: 'Avenir';
+    font-weight: 700;    
+    src: url('./../fonts/AvenirNextCyr-Demi.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./../fonts/AvenirNextCyr-Demi.woff') format('woff'), /* Pretty Modern Browsers */
+         url('./../fonts/AvenirNextCyr-Demi.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Avenir';
+    font-weight: 300;    
+    src: url('./../fonts/AvenirNextCyr-Thin.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./../fonts/AvenirNextCyr-Thin.woff') format('woff'), /* Pretty Modern Browsers */
+         url('./../fonts/AvenirNextCyr-Thin.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'Avenir';
+    font-weight: 400;
+    src: url('./../fonts/AvenirNextCyr-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./../fonts/AvenirNextCyr-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+         url('./../fonts/AvenirNextCyr-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -23,10 +47,10 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Avenir', sans-serif;
   height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
 }
 
 /**
@@ -37,6 +61,9 @@ main {
   flex: 1 0 auto;
 }
 
+* {
+    box-sizing: border-box;
+}
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
@@ -352,7 +379,12 @@ template {
 [hidden] {
   display: none;
 }
-
+.page-width {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
 .lv-header {
     display: flex;
     flex-direction: row;
@@ -376,7 +408,7 @@ template {
 }
 .lv-logo {
     padding-top: 20px;
-    width: 85px;
+    width: 65px;
 }
 
 .lv-menu-mobile {
@@ -395,10 +427,9 @@ template {
     position: relative;
     color: #cbd2d7;
     text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     cursor: pointer;
-    transition: all .2s;
+    transition: all .3s;
     padding-top: 20px;
 }
 .lv-menu-item:hover {
@@ -414,12 +445,12 @@ template {
     left: 0;
     width: 100%;
     height: 1px;
-    transition: all .2s;
+    transition: all .3s;
     background-color: #cbd2d7;
     content: '';
 }
 .lv-menu-item-active {
-    color: #eecd31;
+    color: #eecd31 !important;
 }
 .lv-menu-item-active:after {
     background-color: #eecd31;
@@ -438,7 +469,7 @@ footer {
 video {
     object-fit: cover;
     width: 100vw;
-    height: calc(100vh - 243px);
+    height: calc(100vh - 220px);
     top: 0;
     left: 0;
     z-index: 0;
@@ -446,7 +477,6 @@ video {
 .footer-text {
     padding: 20px 0;
     font-weight: 300;
-    margin-left: 17%;
     width: 640px
 }
 #nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
@@ -552,16 +582,21 @@ video {
         padding-top: 0;
     }
     .footer-text { 
-        width: calc(100% - 60px);
-        padding: 20px;
+        width: 100%;
         margin: 0;
         font-size: 14px;
     }
     video {
-        height: calc(100vh - 235px);
+        height: calc(100vh - 211px);
     }
 }
-
+.our-mission {
+    display: none;
+    height: 100%;
+    /* display: flex; */
+    flex-direction: column;
+    opacity: 0;
+}
 #menu {
     visibility: hidden;
     opacity: 0;
@@ -606,7 +641,7 @@ video {
     display: block;
     width: 90%;
     height: 65px;
-    margin: 0 auto 0.5em auto;
+    margin: 0 auto 20px auto;
   }
   /* #menu ul li:after {
     content: " ";
@@ -676,6 +711,86 @@ video {
       height: 100%;
       justify-content: center;
   }
-  .mobile-menu-active a {
-      color: #eecd31 !important;
+
+  .title-body {
+      text-transform: uppercase;
+      font-size: 48px;
+      font-weight: 700;
+      padding-top: 50px;
   }
+  .word-underline {
+      position: relative;
+  }
+  .word-underline:after {
+      position: absolute;
+      bottom: -18px;
+      height: 8px;
+      width: 100%;
+      content: '';
+      background-color: #eecd31;
+      left: 0;
+  }
+  .mission-body {
+      background-color: #f7f7f7;
+      width: 100%;
+      margin-top: 90px;
+      flex: 1 0 auto;
+  }
+.mission-body-text {  
+    padding-right: 50px;
+    padding-top: 40px;
+}
+.mission-image {
+    padding-top: 40px;
+    max-width: 425px;
+    align-self: flex-start;
+}
+.d-flex-row {
+    display: flex;
+    flex-direction: row;
+}
+.d-flex-row-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.mission-body-text p {
+    margin-top: 0;
+    line-height: 1.5;
+}
+@media only screen and (max-width: 768px) {
+    .lv-header:after {
+        height: 4px;
+    }
+    .page-width {
+        padding: 0 20px
+    }
+    .d-flex-column-mobile {
+        flex-direction: column-reverse;
+    }
+    .mission-body-text {  
+        padding-right: 0;
+        padding-top: 25px;
+    }
+    .title-body {
+        font-size: 38px;
+        padding-top: 25px;
+    }
+    .mission-body {
+        margin-top: 55px;
+    }
+    .mission-image {
+        padding-top: 30px;
+        max-width: 100%;
+    }
+    .mission-body-text p:last-child {
+        padding-bottom: 15px;
+    }    
+    .lv-menu-item-active {
+        color: #cbd2d7 !important;
+    }
+    .mobile-menu-active {
+        color: #eecd31 !important;
+        border-color: #eecd31 !important;
+    }
+}
