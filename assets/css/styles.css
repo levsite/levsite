@@ -807,3 +807,6 @@ video {
         border-color: #eecd31 !important;
     }
 }
+.lock-scroll {
+    overflow-y: hidden;
+}
