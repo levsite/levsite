@@ -15,9 +15,12 @@ $("#toggle").click(function() {
 });
 
 $(document).ready(function(){
-    
-    $(".menu-btn").click(function(){        
-
+    var inProgress = false
+    $(".menu-btn").click(function(){
+        if (inProgress == true) {
+            console.log("nothing to do")
+        } else {       
+        inProgress = true;
         if ($(this).hasClass("home-select")){
             var selectedOption = 'tab1'
         } else if ($(this).hasClass("mission-select")){
@@ -46,8 +49,8 @@ $(document).ready(function(){
             var currentlyOpen = 'body6'
         }
 
-        $("."+selectedOption+"-d").toggleClass("lv-menu-item-active");        
-        $(".tab"+currentlyOpen[4]+"-d").toggleClass("lv-menu-item-active");
+        $(".menu-btn").removeClass("lv-menu-item-active");
+        $(".tab"+selectedOption[4]+"-d").addClass("lv-menu-item-active");
         
         $("#toggle").removeClass("open");
         $("#nav-icon4").removeClass("open");
@@ -139,8 +142,9 @@ $(document).ready(function(){
                 });
             });
         }
-
-    }
+        inProgress = false;
+    } //here
+}
 
     // $(".home-select").click(function() {
     //     $(this).toggleClass("lv-menu-item-active");
