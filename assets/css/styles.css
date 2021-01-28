@@ -727,7 +727,7 @@ video {
 
   .title-body {
       text-transform: uppercase;
-      font-size: 48px;
+      font-size: 38px;
       font-weight: 700;
       padding-top: 50px;
   }
@@ -786,7 +786,7 @@ video {
         padding-top: 25px;
     }
     .title-body {
-        font-size: 38px;
+        font-size: 26px;
         padding-top: 25px;
     }
     .mission-body {
