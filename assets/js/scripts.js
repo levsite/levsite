@@ -49,6 +49,31 @@ $(document).ready(function(){
             var currentlyOpen = 'body6'
         }
 
+        if (selectedOption == "tab1" && currentlyOpen == "body1") {
+            console.log("same");
+            inProgress = false;
+        } else if (selectedOption == "tab2" && currentlyOpen == "body2") {
+            console.log("same");
+            inProgress = false;
+        } 
+        else if (selectedOption == "tab3" && currentlyOpen == "body3") {
+            console.log("same");
+            inProgress = false;
+        } 
+        else if (selectedOption == "tab4" && currentlyOpen == "body4") {
+            console.log("same");
+            inProgress = false;
+        } 
+        else if (selectedOption == "tab5" && currentlyOpen == "body5") {
+            console.log("same");
+            inProgress = false;
+        } 
+        else if (selectedOption == "tab6" && currentlyOpen == "body6") {
+            console.log("same");
+            inProgress = false;
+        } 
+        else {
+
         $(".menu-btn").removeClass("lv-menu-item-active");
         $(".tab"+selectedOption[4]+"-d").addClass("lv-menu-item-active");
         
@@ -144,6 +169,7 @@ $(document).ready(function(){
         }
         inProgress = false;
     } //here
+}
 }
 
     // $(".home-select").click(function() {
