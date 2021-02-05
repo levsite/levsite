@@ -791,13 +791,14 @@ video {
     .mission-body-text {  
         padding-right: 0;
         padding-top: 25px;
+        font-size: 14px;
     }
     .title-body {
         font-size: 26px;
         padding-top: 25px;
     }
     .mission-body {
-        margin-top: 55px;
+      top: 75px;
     }
     .mission-image {
         padding-top: 30px;
@@ -818,10 +819,13 @@ video {
     overflow-y: hidden;
 }
 .page-body {
-    background-color: #f7f7f7;
     width: 100%;
-    margin-top: 90px;
     flex: 1 0 auto;
+    background-color: transparent;
+    position: absolute;
+    top: 120px;
+    z-index: 1;
+    color: #fff;
 }
 .page-wrapper {
     height: 100%;
@@ -837,11 +841,6 @@ video {
     position: relative;
 }
 
-@media only screen and (max-width: 768px) { 
-    .page-body {
-        margin-top: 55px;
-    }
-}
 .video2 {
   height: calc(100vh - 220px);
 }
