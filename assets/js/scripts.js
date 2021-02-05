@@ -75,7 +75,7 @@ $(document).ready(function(){
         else {
 
         $(".menu-btn").removeClass("lv-menu-item-active");
-        $(".tab"+selectedOption[4]+"-d").addClass("lv-menu-item-active");
+        $("."+selectedOption+"-d").addClass("lv-menu-item-active");
         
         $("#toggle").removeClass("open");
         $("#nav-icon4").removeClass("open");
