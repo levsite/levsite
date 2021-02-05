@@ -602,6 +602,9 @@ video {
     video {
         height: calc((var(--vh, 1vh) * 100) - 211px);
     }
+    .video2 {
+      height: calc((var(--vh, 1vh) * 100) - 211px);
+    }
 }
 .our-mission {
     display: none;
@@ -730,6 +733,7 @@ video {
       font-size: 38px;
       font-weight: 700;
       padding-top: 50px;
+      color: #fff;
   }
   .word-underline {
       position: relative;
@@ -746,11 +750,11 @@ video {
   .mission-body {
       background-color: transparent;
       width: 100%;
-      margin-top: 90px;
       flex: 1 0 auto;
       position: absolute;
-      top: 240px;
-      z-index: 9999;
+      top: 120px;
+      z-index: 1;
+      color: #fff;
   }
 .mission-body-text {  
     padding-right: 50px;
@@ -830,6 +834,7 @@ video {
 .body2, .body3, .body4, .body5, .body6 {
     opacity: 0;
     display: none;
+    position: relative;
 }
 
 @media only screen and (max-width: 768px) { 
@@ -837,9 +842,12 @@ video {
         margin-top: 55px;
     }
 }
-.video-padding {
-  padding-top: 85px;
-}
 .video2 {
-  height: calc(100vh - 310px);
+  height: calc(100vh - 220px);
+}
+.absolute-title {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  top: 0;
 }
