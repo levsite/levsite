@@ -89,6 +89,7 @@ $(document).ready(function(){
         $(".lv-header").removeClass("openmenu");
 
         if (selectedOption == 'tab1') {
+            inProgress = true;
             $("."+currentlyOpen).animate({
                 opacity: 0,
               }, 500, function() {    
@@ -98,23 +99,27 @@ $(document).ready(function(){
                 $("."+currentlyOpen).removeClass("is-visible"); 
                 $(".body1").animate({
                     opacity: 1,
-                  }, 500, function() {                
+                  }, 500, function() {              
+                    inProgress = false;  
                 });
             });
         } else if (selectedOption == 'tab2') {
+            inProgress = true;
             $("."+currentlyOpen).animate({
                 opacity: 0,
               }, 500, function() {    
                 $(".body2").css("display","flex");
-                $(".body2").addClass("is-visible")
+                $(".body2").addClass("is-visible");
                 $("."+currentlyOpen).hide();        
                 $("."+currentlyOpen).removeClass("is-visible"); 
                 $(".body2").animate({
                     opacity: 1,
-                  }, 500, function() {                
+                  }, 500, function() {             
+                    inProgress = false;   
                 });
             });
         } else if (selectedOption == 'tab3') {
+            inProgress = true;
             $("."+currentlyOpen).animate({
                 opacity: 0,
               }, 500, function() {    
@@ -124,36 +129,42 @@ $(document).ready(function(){
                 $("."+currentlyOpen).removeClass("is-visible");
                 $(".body3").animate({
                     opacity: 1,
-                  }, 500, function() {                
+                  }, 500, function() {        
+                    inProgress = false;        
                 });
             });
         } else if (selectedOption == 'tab4') {
+            inProgress = true;
             $("."+currentlyOpen).animate({
                 opacity: 0,
               }, 500, function() {    
                 $(".body4").css("display","flex");
-                $(".body4").addClass("is-visible")
+                $(".body4").addClass("is-visible");
                 $("."+currentlyOpen).hide();
                 $("."+currentlyOpen).removeClass("is-visible");   
                 $(".body4").animate({
                     opacity: 1,
                   }, 500, function() {                
+                    inProgress = false;
                 });
             });
         } else if (selectedOption == 'tab5') {
+            inProgress = true;
             $("."+currentlyOpen).animate({
                 opacity: 0,
               }, 500, function() {    
                 $(".body5").css("display","flex");
-                $(".body5").addClass("is-visible")
+                $(".body5").addClass("is-visible");
                 $("."+currentlyOpen).hide();
                 $("."+currentlyOpen).removeClass("is-visible");
                 $(".body5").animate({
                     opacity: 1,
-                  }, 500, function() {                
+                  }, 500, function() {          
+                    inProgress = false;      
                 });
             });
         } else if (selectedOption == 'tab6') {
+            inProgress = true;
             $("."+currentlyOpen).animate({
                 opacity: 0,
               }, 500, function() {    
@@ -164,10 +175,10 @@ $(document).ready(function(){
                 $(".body6").animate({
                     opacity: 1,
                   }, 500, function() {                
+                    inProgress = false;
                 });
             });
         }
-        inProgress = false;
     } //here
 }
 }

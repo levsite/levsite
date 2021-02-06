@@ -757,8 +757,8 @@ video {
       color: #fff;
   }
 .mission-body-text {  
-    padding-right: 50px;
     padding-top: 40px;
+    width: 100%;
 }
 .mission-image {
     padding-top: 40px;
@@ -849,4 +849,98 @@ video {
   width: 100%;
   z-index: 1;
   top: 0;
+}
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+}
+.who-we-are-body {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.person-box {
+  padding: 0 15px;
+  text-align: center;
+}
+.person-box:first-child {
+  padding-left: 0;
+}
+.person-box:last-child {
+  padding-right: 0;
+}
+.who-we-are-body {
+  padding-top: 0;  
+}
+.absolute-y-center {
+  transform: translateY(-50%);
+  top: 50%;
+}
+.person-name {
+  font-weight: 700;
+  font-size: 135%;
+}
+.person-role {
+  font-size: 75%;
+  padding: 5px 0;
+}
+
+.what-we-do-logos { 
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 20px;
+}
+.what-we-do-logos i {
+  font-size: 200%;
+  padding-bottom: 15px;
+}
+.logo-box {
+  text-align: center;
+  padding: 0 15px;
+  flex-basis: 33%;
+  width: 33%;
+}
+.logo-box:first-child {  
+  padding-left: 0;
+}
+.logo-box:last-child {  
+  padding-right: 0;
+}
+.logo-box:nth-child(4) {
+  padding-top: 100px;
+}
+.mission-body-text input{ 
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 8px;
+  width: 100%;
+}
+.mission-body-text input::placeholder {
+  color: #fff;
+}
+.contact-label {
+  padding: 10px 0;
+}
+.contact-label:first-child {
+  padding-top: 0;
+}
+.contact-label:last-child {
+  padding-bottom: 0;
+}
+.message-area {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #fff;
+  max-width: 100%;
+}
+.message-area::placeholder {
+  color: #fff;
 }
