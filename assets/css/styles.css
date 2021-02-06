@@ -1003,4 +1003,13 @@ video {
   .video2 {
     height: calc((var(--vh, 1vh) * 100) - 211px);
   }
+  .logo-box:nth-child(1n+4) {
+    padding-top: 22px;
+  }
+  .logo-subtitle {
+    height: 50px;
+  }
+  .page-body-what-we-do {
+    top: 75px;
+  }
 }
