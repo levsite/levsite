@@ -944,3 +944,12 @@ video {
 .message-area::placeholder {
   color: #fff;
 }
+.submit-btn {
+  margin-top: 20px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  width: 100%;
+  max-width: 300px;
+  padding: 8px;
+  text-align: center;
+}
