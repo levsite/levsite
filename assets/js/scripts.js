@@ -1,4 +1,13 @@
 $(document).ready(function(){
+    $("#toggle").click(function() {
+        $(this).toggleClass("open");
+        $("#menu").toggleClass("opened");
+        $(".lv-header").toggleClass("openmenu");    
+        $("html").toggleClass("lock-scroll");
+        $("body").toggleClass("lock-scroll");
+    });
+});
+$(document).ready(function(){
     var inProgress = false
     $(".menu-btn").click(function(){
         if (inProgress == true) {
