@@ -964,6 +964,12 @@ video {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: calc(100vh - 220px);
   z-index: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  .background-overlay {  
+    height: calc((var(--vh, 1vh) * 100) - 211px);
+  }
 }
