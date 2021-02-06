@@ -1,20 +1,4 @@
 $(document).ready(function(){
-	$('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
-        $(this).toggleClass('open');        
-	});
-});
-
-
-
-$("#toggle").click(function() {
-	$(this).toggleClass("open");
-    $("#menu").toggleClass("opened");
-    $(".lv-header").toggleClass("openmenu");    
-    $("html").toggleClass("lock-scroll");
-    $("body").toggleClass("lock-scroll");
-});
-
-$(document).ready(function(){
     var inProgress = false
     $(".menu-btn").click(function(){
         if (inProgress == true) {

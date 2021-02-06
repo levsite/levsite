@@ -617,7 +617,7 @@ video {
     visibility: hidden;
     opacity: 0;
     position: fixed;
-    z-index: 2;
+    z-index: 999;
     width: 100%;
     height: 100%;
     top: 0;
@@ -824,7 +824,7 @@ video {
     background-color: transparent;
     position: absolute;
     top: 120px;
-    z-index: 1;
+    z-index: 10;
     color: #fff;
 }
 .page-wrapper {
@@ -847,7 +847,7 @@ video {
 .absolute-title {
   position: absolute;
   width: 100%;
-  z-index: 1;
+  z-index: 10;
   top: 0;
 }
 .video-overlay {
@@ -868,6 +868,7 @@ video {
 .person-box {
   padding: 0 15px;
   text-align: center;
+  text-shadow: 2px 2px rgb(0 0 0 / 30%);
 }
 .person-box:first-child {
   padding-left: 0;
@@ -906,7 +907,7 @@ video {
   text-align: center;
   padding: 0 15px;
   flex-basis: 33%;
-  width: 33%;
+  width: 33.33%;
 }
 .logo-box:first-child {  
   padding-left: 0;
@@ -916,6 +917,9 @@ video {
 }
 .logo-box:nth-child(4) {
   /* padding-top: 100px; */
+}
+.logo-box:nth-child(1n+4) {
+  padding-top: 50px;
 }
 .mission-body-text input{ 
   background-color: transparent;
@@ -952,4 +956,14 @@ video {
   max-width: 300px;
   padding: 8px;
   text-align: center;
+}
+.background-overlay {
+  background-color: #000;
+  opacity: .1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
