@@ -1000,4 +1000,7 @@ video {
     margin-right: auto;
     margin-top: 20px;
   }
+  .video2 {
+    height: calc((var(--vh, 1vh) * 100) - 211px);
+  }
 }
