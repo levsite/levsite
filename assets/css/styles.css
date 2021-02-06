@@ -868,6 +868,20 @@ video {
 .who-we-are-body {
   padding-top: 0;  
 }
+.who-we-are-body {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.person-box {
+  padding: 0 15px;
+  text-align: center;
+  text-shadow: 2px 2px rgb(0 0 0 / 30%);
+}
+.person-box:first-child {
+  padding-left: 0;
+}
 .absolute-y-center {
   transform: translateY(-50%);
   top: 50%;
