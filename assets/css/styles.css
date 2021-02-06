@@ -1030,7 +1030,7 @@ video {
 }
 .image-placeholder {
   width: 100%;
-  background-image: url('./../images/ocean.png');
+  background-image: url('https://cdn.shopify.com/s/files/1/0049/3102/7015/files/ocean_bg.png?v=1612645773');
   background-size: cover;
   background-position: center;
 }
