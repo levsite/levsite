@@ -915,7 +915,7 @@ video {
   padding-right: 0;
 }
 .logo-box:nth-child(4) {
-  padding-top: 100px;
+  /* padding-top: 100px; */
 }
 .mission-body-text input{ 
   background-color: transparent;
