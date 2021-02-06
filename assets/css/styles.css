@@ -600,10 +600,10 @@ video {
         font-size: 14px;
     }
     video {
-        height: calc((var(--vh, 1vh) * 100) - 211px);
+        height: calc((var(--vh, 1vh) * 100) - 209px);
     }
     .video2 {
-      height: calc((var(--vh, 1vh) * 100) - 211px);
+      height: calc((var(--vh, 1vh) * 100) - 209px);
     }
 }
 .our-mission {
@@ -814,6 +814,9 @@ video {
         color: #eecd31 !important;
         border-color: #eecd31 !important;
     }
+    .mission-body-text p {
+      line-height: 1.25;
+    }
 }
 .lock-scroll {
     overflow-y: hidden;
@@ -984,8 +987,11 @@ video {
 }
 
 @media only screen and (max-width: 768px) {
+  .person-name {
+    font-size: 115%;
+  }
   .background-overlay {  
-    height: calc((var(--vh, 1vh) * 100) - 211px);
+    height: calc((var(--vh, 1vh) * 100) - 209px);
   }
   .who-we-are-body {
     display: flex;
@@ -996,7 +1002,7 @@ video {
   }
   .person-box {
     width: 33.33%;
-    padding: 0 15px;
+    padding: 0 7px;
     text-align: center;
     /* text-shadow: 2px 2px rgb(0 0 0 / 30%); */
   }   
@@ -1013,7 +1019,7 @@ video {
     margin-top: 20px;
   }
   .video2 {
-    height: calc((var(--vh, 1vh) * 100) - 211px);
+    height: calc((var(--vh, 1vh) * 100) - 209px);
   }
   .logo-box:nth-child(1n+4) {
     padding-top: 22px;
