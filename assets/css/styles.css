@@ -1036,11 +1036,11 @@ video {
     max-width: 100%;
   }
   .what-we-do-logos {
-    padding-top: 15px;
+    padding-top: 10px;
   }
   .what-we-do-logos i {
-    padding-bottom: 8px;
-    font-size: 150%;
+    padding-bottom: 5px;
+    font-size: 130%;
   }
 }
 .image-placeholder {
