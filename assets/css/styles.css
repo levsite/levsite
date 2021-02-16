@@ -1024,7 +1024,7 @@ video {
     height: calc((var(--vh, 1vh) * 100) - 209px);
   }
   .logo-box:nth-child(1n+4) {
-    padding-top: 22px;
+    padding-top: 15px;
   }
   .logo-subtitle {
     height: 50px;
