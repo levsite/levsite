@@ -878,6 +878,7 @@ video {
   justify-content: space-between;
 }
 .person-box {
+  font-size: 130%;
   padding: 0 15px;
   text-align: center;
   /* text-shadow: 2px 2px rgb(0 0 0 / 30%); */
@@ -977,7 +978,7 @@ video {
 }
 .background-overlay {
   background-color: #000;
-  opacity: .1;
+  opacity: .25;
   position: absolute;
   top: 0;
   left: 0;
@@ -1044,4 +1045,9 @@ video {
 }
 input, textarea {
   border-radius: 0;
+}
+.light-white-box {
+  background-color: rgba(255,255,255,0.25);
+  color: #000;
+  padding: 20px;
 }
