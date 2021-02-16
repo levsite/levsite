@@ -986,6 +986,10 @@ video {
   z-index: 1;
 }
 
+.light-white-box {
+  background-color: rgba(255,255,255,0.15);
+  padding: 20px;
+}
 @media only screen and (max-width: 768px) {
   .person-box:first-child {
     padding-left: 7px;
@@ -1042,6 +1046,11 @@ video {
     padding-bottom: 5px;
     font-size: 130%;
   }
+
+  .light-white-box {
+    background-color: rgba(255,255,255,0.15);
+    padding: 12px;
+  }
 }
 .image-placeholder {
   width: 100%;
@@ -1051,8 +1060,4 @@ video {
 }
 input, textarea {
   border-radius: 0;
-}
-.light-white-box {
-  background-color: rgba(255,255,255,0.15);
-  padding: 20px;
 }
