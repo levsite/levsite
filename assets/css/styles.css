@@ -1035,6 +1035,13 @@ video {
   .submit-btn {
     max-width: 100%;
   }
+  .what-we-do-logos {
+    padding-top: 15px;
+  }
+  .what-we-do-logos i {
+    padding-bottom: 8px;
+    font-size: 150%;
+  }
 }
 .image-placeholder {
   width: 100%;
