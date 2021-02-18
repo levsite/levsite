@@ -421,11 +421,13 @@ template {
 }
 .lv-logo {
     padding-top: 20px;
-    width: 65px;
+    /* width: 65px; */
+    height: 96px;
 }
 
 .lv-menu-mobile {
     display: none;
+    margin-top: 9px;
 }
 .lv-menu {    
     display: flex;
