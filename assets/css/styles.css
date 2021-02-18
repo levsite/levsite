@@ -905,7 +905,7 @@ video {
 }
 .what-we-do-logos i {
   font-size: 200%;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 .logo-box {
   text-align: center;
@@ -927,7 +927,7 @@ video {
   padding-right: 0;
 }
 .logo-box:nth-child(1n+4) {
-  padding-top: 50px;
+  padding-top: 45px;
 }
 .mission-body-text input{ 
   /* background-color: rgba(255,255,255,0.15); */
@@ -936,6 +936,7 @@ video {
   padding: 8px;
   width: 100%;
   color: #fff;
+  margin-top: 15px;
 }
 .mission-body-text input::placeholder {
   color: #fff;
@@ -960,12 +961,13 @@ video {
   max-height: 250px;
   min-height: 60px;
   padding: 8px;
+  margin-top: 15px;
 }
 .message-area::placeholder {
   color: #fff;
 }
 .submit-btn {
-  margin-top: 20px;
+  margin-top: 15px;
   background-color: transparent;
   border: 1px solid #fff;
   width: 100%;
