@@ -843,7 +843,16 @@ video {
     display: none;
     position: relative;
 }
-
+.central-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 250%;
+  text-align: center;
+}
 .video2 {
   height: calc(100vh - 197px);
 }
@@ -1002,6 +1011,11 @@ video {
   margin-bottom: 0;
 }
 @media only screen and (max-width: 768px) {
+  .central-title {
+    font-size: 130%;
+    width: 90%;
+    max-width: 375px;
+  }
   .light-black-box p:last-child {
     margin-bottom: 0;
   }
