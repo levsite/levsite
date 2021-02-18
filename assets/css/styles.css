@@ -862,12 +862,12 @@ video {
   width: 100%;
   background-color: #000;
 }
-.person-box:first-child {
+/* .person-box:first-child {
   padding-left: 0;
 }
 .person-box:last-child {
   padding-right: 0;
-}
+} */
 .who-we-are-body {
   padding-top: 0;  
 }
@@ -878,12 +878,10 @@ video {
   justify-content: space-between;
 }
 .person-box {
-  padding: 0 15px;
+  padding: 15px;
   text-align: center;
   /* text-shadow: 2px 2px rgb(0 0 0 / 30%); */
-}
-.person-box:first-child {
-  padding-left: 0;
+  background-color: rgba(0,0,0,0.45);
 }
 .absolute-y-center {
   transform: translateY(-50%);
@@ -891,7 +889,7 @@ video {
 }
 .person-name {
   font-weight: 700;
-  font-size: 135%;
+  font-size: 115%;
 }
 .person-role {
   font-size: 75%;
@@ -932,7 +930,8 @@ video {
   padding-top: 50px;
 }
 .mission-body-text input{ 
-  background-color: rgba(255,255,255,0.15);
+  /* background-color: rgba(255,255,255,0.15); */
+  background-color: rgba(0,0,0,0.45);
   border: 1px solid #fff;
   padding: 8px;
   width: 100%;
@@ -952,7 +951,8 @@ video {
 }
 .message-area {
   width: 100%;
-  background-color: rgba(255,255,255,0.15);
+  /* background-color: rgba(255,255,255,0.15); */
+  background-color: rgba(0,0,0,0.45);
   border: 1px solid #fff;
   max-width: 100%;
   color: #fff;
@@ -973,7 +973,8 @@ video {
   padding: 8px;
   text-align: center;
   cursor: pointer;
-  background-color: rgba(255,255,255,0.15);
+  /* background-color: rgba(255,255,255,0.15); */
+  background-color: rgba(0,0,0,0.45);
 }
 .background-overlay {
   background-color: #000;
@@ -989,6 +990,14 @@ video {
 .light-white-box {
   background-color: rgba(255,255,255,0.15);
   padding: 20px;
+}
+.light-black-box {
+  background-color: rgba(0,0,0,0.45);
+  color: #fff;
+  padding: 20px;
+}
+.light-black-box p:last-child {
+  margin-bottom: 0;
 }
 @media only screen and (max-width: 768px) {
   .person-box:first-child {
@@ -1008,21 +1017,21 @@ video {
     flex-wrap: wrap;
   }
   .person-box {
-    width: 33.33%;
-    padding: 0 7px;
+    width: 46%;
+    padding: 10px;
+    margin: 0 5px;
     text-align: center;
     /* text-shadow: 2px 2px rgb(0 0 0 / 30%); */
-  }   
-  .person-box:nth-child(4){
-    margin-left: auto;
+    background-color: rgba(0,0,0,0.45);
+  }
+  .person-box:nth-child(3){
     margin-top: 20px;
   }
-  .person-box:nth-child(5){
-    margin-right: auto;
+  .person-box:nth-child(4){    
     margin-top: 20px;
-  }
+  }  
   .person-box:last-child {
-    padding-right: 7px;
+    margin: 20px auto 0 auto;
   }
   .video2 {
     height: calc((var(--vh, 1vh) * 100) - 209px);
