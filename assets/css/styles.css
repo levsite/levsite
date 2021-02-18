@@ -855,6 +855,9 @@ video {
   font-size: 250%;
   text-align: center;
 }
+.central-title svg {
+  width: 550px;
+}
 .video2 {
   height: calc(100vh - 197px);
 }
@@ -1017,6 +1020,9 @@ video {
     font-size: 130%;
     width: 90%;
     max-width: 375px;
+  }
+  .central-title svg {
+    width: 320px;
   }
   .light-black-box p:last-child {
     margin-bottom: 0;
