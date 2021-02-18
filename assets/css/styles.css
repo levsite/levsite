@@ -482,7 +482,7 @@ footer {
 video {
     object-fit: cover;
     width: 100vw;
-    height: calc(100vh - 220px);
+    height: calc(100vh - 197px);
     top: 0;
     left: 0;
     z-index: 0;
@@ -490,7 +490,7 @@ video {
 .footer-text {
     padding: 20px 0;
     font-weight: 300;
-    width: 640px
+    width: 100%;
 }
 #nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
     width: 30px;
@@ -845,7 +845,7 @@ video {
 }
 
 .video2 {
-  height: calc(100vh - 220px);
+  height: calc(100vh - 197px);
 }
 .absolute-title {
   position: absolute;
